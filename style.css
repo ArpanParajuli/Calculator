@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --theme: rgb(39, 39, 42);
+}
+
+  /* Universal Calculator Button Config */
+
+button {
+  height: 50px;
+  width: 50px;
+  background-color: var(--theme);
+  border-radius: 50%;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+
+button:hover{
+    box-shadow: 2px 1px lightblue;
+    border: 2px solid orange;
+}
+
+#calculator-parent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calculator-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  background-color: var(--theme);
+  border-radius: 2%;
+}
+
+#title {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.display-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.display-section input {
+  height: 55px;
+  width: 100%;
+  font-size: 2rem;
+  color: gray;
+  outline: none;
+
+}
+
+.number-section {
+  margin-top: 5%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
